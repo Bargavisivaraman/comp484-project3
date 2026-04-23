@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Manager - DOM Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">DOM Status Manager</h1>
+        
+        <div class="control-panel" id="control-panel">
+            <a href="#" id="toggle-button" class="btn">Toggle Status</a>
+            <button id="timer-button" class="btn">Start Timer</button>
+        </div>
+
+        <div id="status-output" class="status-box hidden">
+            <h2>Status Information</h2>
+            <p>This panel is now visible!</p>
+        </div>
+
+        <div class="info-section">
+            <h3>Feature List</h3>
+            <ul id="item-list">
+                <li>DOM Manipulation</li>
+                <li>Event Handling</li>
+                <li>CSS Class Toggling</li>
+                <li>Dynamic Content Creation</li>
+                <li>Timing Functions</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
