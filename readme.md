@@ -5,7 +5,7 @@
 **Student:** Bargavi Sivaraman
 
 ## Live Demo
-[Your GitHub Pages Link Here]
+https://bargavisivaraman.github.io/comp484-project3/
 
 ## What This Project Does
 
