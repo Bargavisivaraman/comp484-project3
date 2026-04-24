@@ -12,6 +12,15 @@ const toggleButton = document.getElementById('toggle-button');
 toggleButton.setAttribute('data-action', 'status-toggle');
 // Alternative: toggleButton.dataset.action = 'status-toggle';
 
+// EXTRA FEATURE 2: Click Counter (declared first)
+let clickCount = 0;
+
+function updateClickCounter() {
+    clickCount++;
+    const counter = document.getElementById('click-counter');
+    if (counter) counter.textContent = `Toggles: ${clickCount}`;
+}
+
 // TASK 5, 6, 7: Primary implementation
 function toggleStatus(e) {
     e.preventDefault();
@@ -22,6 +31,7 @@ function toggleStatus(e) {
     if (!statusOutput.classList.contains('hidden')) {
         mainTitle.style.backgroundColor = "yellow";
         createTimestamp();
+        updateClickCounter(); // Update counter when panel is shown
     } else {
         mainTitle.style.backgroundColor = "";
     }
@@ -78,16 +88,3 @@ const darkModeBtn = document.getElementById('dark-mode-btn');
 if (darkModeBtn) {
     darkModeBtn.addEventListener('click', toggleDarkMode);
 }
-
-
-// EXTRA FEATURE 2: Click Counter
-
-let clickCount = 0;
-
-const originalToggle = toggleStatus;
-toggleStatus = function(e) {
-    originalToggle(e);
-    clickCount++;
-    const counter = document.getElementById('click-counter');
-    if (counter) counter.textContent = `Toggles: ${clickCount}`;
-};
