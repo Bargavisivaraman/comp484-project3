@@ -63,6 +63,9 @@ highlightListItems();
 
 // TASK 10: Primary implementation
 function startFlashing() {
+    // Don't start if already flashing
+    if (flashingInterval !== null) return;
+    
     const controlPanel = document.getElementById('control-panel');
     flashingInterval = setInterval(function() {
         controlPanel.classList.toggle('flashing');
@@ -71,6 +74,7 @@ function startFlashing() {
 
 function stopFlashing() {
     clearInterval(flashingInterval);
+    flashingInterval = null; // Reset to null
     const controlPanel = document.getElementById('control-panel');
     controlPanel.classList.remove('flashing');
 }
