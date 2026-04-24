@@ -2,7 +2,7 @@
 
 **Course:** COMP 484  
 **Project:** Project 3  
-**Student:** [Your Name]
+**Student:** Bargavi Sivaraman
 
 ## Live Demo
 [Your GitHub Pages Link Here]
@@ -72,4 +72,3 @@ All methods documented in `DOCUMENTATION.md` with links to:
 
 ---
 
-**Meets all requirements for students after 5th position**
