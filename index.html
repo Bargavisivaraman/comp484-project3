@@ -8,11 +8,17 @@
 </head>
 <body>
     <div class="container">
+        <button id="dark-mode-btn" class="dark-mode-toggle">🌙 Dark Mode</button>
+        
         <h1 id="main-title">DOM Status Manager</h1>
         
         <div class="control-panel" id="control-panel">
             <a href="#" id="toggle-button" class="btn">Toggle Status</a>
             <button id="timer-button" class="btn">Start Timer</button>
+        </div>
+
+        <div class="stats">
+            <span id="click-counter">Toggles: 0</span>
         </div>
 
         <div id="status-output" class="status-box hidden">
